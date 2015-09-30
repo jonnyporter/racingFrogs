@@ -1,0 +1,32 @@
+.nameLane {
+	width: 100px;
+	border: 2px solid black;
+	text-align: center;
+}
+
+.raceLane {
+	background-color: #1D2023;
+	width: 1000px;
+	height: 50px;
+	border: 3px dashed yellow;
+	position: relative;
+}
+
+.frog {
+	width: 20px;
+	height: 20px;
+	background-color: limegreen;
+	border-radius: 50%;
+	display: inline-block;
+	position: absolute;
+}
+
+.left {
+	float: left;
+	color: white;
+}
+
+.right {
+	float: right;
+	color: white;
+}

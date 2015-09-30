@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <title>Racing Frogs</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body ng-controller="MainController as vm">
+    <!--
+      
         <div class="container">
         <div class="panel panel-primary">
             <div class="panel-heading">
@@ -29,6 +32,28 @@
                 <span class="btn btn-default" ng-click="vm.receiveMoneyFromBob()">Receive $5 from That Guy</span>
             </div>
         </div>
+    </div>
+    -->
+
+    <div class="container">
+        <div class="panel panel-success">
+            <div class="panel-heading">
+                <h1>Frog Races!</h1>
+            </div>
+            <div class="panel-body">
+                <h4>Frogs / Lanes</h4>
+                <table ng-repeat="frog in vm.frogs">
+                    <td class="nameLane">{{frog.name}}</td>
+                    <td class="raceLane">
+                        <div class="frog" style="left: {{frog.position}}%;"></div>
+                        <span class="left">START ||</span>
+                        <span class="right">|| FINISH</span>
+                    </td>
+                </table>
+    <div class="panel-footer">
+        <button class="btn btn-danger" ng-click="vm.race()">BEGIN</button>
+    </div>
+    </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
