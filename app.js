@@ -21,9 +21,10 @@ function MainController() {
             frog.position += random();
             if (frog.position >= 95) {
                 alert(frog.name + ' wins!')
+                window.location.reload();
                 
-                
-        }
+
+            }
 
         })
     }
